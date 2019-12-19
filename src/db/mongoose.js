@@ -6,6 +6,4 @@ mongoose.connect(`${process.env.MONGODB_URL}`,
         useUnifiedTopology: true,
         useNewUrlParser: true,
         useFindAndModify: false
-    }).catch((err) => {
-        return new Error(`Can't able to connect db`)
     })
